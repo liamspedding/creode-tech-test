@@ -34,6 +34,6 @@ class CritterAPI {
             return json_decode($this->_unauthorisedString);
         }
 
-        return json_decode(file_get_contents("data/critter.json"));
+        return json_decode(file_get_contents(__DIR__ . "/data/critter.json"));
     }
 }

@@ -13,7 +13,7 @@ class CBookAPI {
      *
      * @var string
      */
-    private $_apiSecretKey;
+    private $_apiClientSecret;
 
     /**
      * String returned when we aren't authenticated.
@@ -43,10 +43,10 @@ class CBookAPI {
             return json_decode($this->_unauthorisedString);
         }
 
-        if ($this->_apiSecretKey !== '07xdHM9OA8ULaBeC') {
+        if ($this->_apiClientSecret !== '07xdHM9OA8ULaBeC') {
             return json_decode($this->_unauthorisedString);
         }
 
-        return json_decode(file_get_contents("data/cbook.json"));
+        return json_decode(file_get_contents(__DIR__ . "/data/cbook.json"));
     }
 }
