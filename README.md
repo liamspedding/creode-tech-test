@@ -26,6 +26,7 @@ The final output of this implementation will be a page showing the following dat
  - Follower/Friend Photo
  - Follower/Friend Description
  - Follower/Friend Count
+ - Follower/Friend Email Address
 
 This doesn’t have to look pretty (it isn’t a design test). The main goal is to be able to swap between the Mock API’s, changing the smallest amount of code you can and organise the code in a way that is both performant and adaptable.
 
