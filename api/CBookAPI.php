@@ -39,12 +39,12 @@ class CBookAPI {
      * @return string JSON Data from mocked API.
      */
     public function getFriends() {
-        if ($this->_apiClientKey !== 'client_id') {
-            return $this->_unauthorisedString;
+        if ($this->_apiClientKey !== '8XWr1Hp5xbhSM6u0') {
+            return json_decode($this->_unauthorisedString);
         }
 
-        if ($this->_apiSecretKey !== 'client_secret') {
-            return $this->_unauthorisedString;
+        if ($this->_apiSecretKey !== '07xdHM9OA8ULaBeC') {
+            return json_decode($this->_unauthorisedString);
         }
 
         return json_decode(file_get_contents("data/cbook.json"));

@@ -30,8 +30,8 @@ class CritterAPI {
      * @return string JSON Data from mocked API.
      */
     public function getFollowers() {
-        if ($this->_apiKey !== 'api-key') {
-            return $this->_unauthorisedString;
+        if ($this->_apiKey !== 'j4nHNuaPo2nq6AdW') {
+            return json_decode($this->_unauthorisedString);
         }
 
         return json_decode(file_get_contents("data/critter.json"));
