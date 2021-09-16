@@ -6,7 +6,7 @@ You should aim to spend no longer than 2 hours on this and don’t worry if you 
 
 ## Brief
 
-The aim of this task is to pull data from either of the 2 separate mock API Library classes, provided alongside this document. Both mocks are intended to be simple libraries which talk with a Social Media API.
+The aim of this task is to pull data from one of the mock service classes, with the ability to easily switch to using the other one. Both mocks are intended to be simple libraries which talk to a Social Media API.
 
 ### CBook API Mock Library
 The CBook API uses an approach which requires:
@@ -32,8 +32,8 @@ This doesn’t have to look pretty (it isn’t a design test). The main goal is 
 
 ## Deliverables
 
-An archived git repository showing commit history
-Any instructions to get the code running
-A brief write-up of any decisions you made (and why!) and details of any bits you didn't manage to add within the 2 hours time but you'd like to.
+ - An archived git repository showing commit history
+ - Any instructions to get the code running
+ - A brief write-up of any decisions you made (and why!) and details of any bits you didn't manage to add within the 2 hours time but you'd like to.
 
 All the deliverables should be emailed to guy.weston@creode.co.uk once you have finished.
