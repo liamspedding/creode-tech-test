@@ -2,7 +2,7 @@
 
 ## Introduction
 
-You should aim to spend no longer than 2 hours on this and don’t worry if you don’t manage to complete it, just send over what you have. We’d like to see your solution with well thought out, clean code focusing on readability and reusability.
+You should not spend many hours on this and don’t worry if you don’t manage to complete it, just send over what you have. We’d like to see your solution with well thought out, clean code focusing on readability and reusability.
 
 ## Brief
 
