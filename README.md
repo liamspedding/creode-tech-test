@@ -8,8 +8,6 @@ You should not spend longer than a few hours developing code and don’t worry i
 
 The aim is to produce a webpage which displays a list of friends/followers. These should be retrieved from the mock API classes provided. The product must be as adaptable as possible for future requirements, for example the implementation of additional API classes. The code should be formatted and organised as simply as possible and repeated code should be avoided.
 
-This doesn’t have to look pretty (it isn’t a design test).
-
 ### CBook API Mock Library
 The CBook API uses an approach which requires:
 
