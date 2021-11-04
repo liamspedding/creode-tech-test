@@ -32,8 +32,8 @@ This doesn’t have to look pretty (it isn’t a design test). The main goal is 
 
 ## Deliverables
 
- - An archived git repository showing commit history
- - Any instructions to get the code running
- - A brief write-up of any decisions you made (and why!) and details of any bits you didn't manage to add within the 2 hours time but you'd like to.
+ - A brief write-up of any decisions you made (and why!) and details of any bits you didn't manage to add but you'd like to.
+ - Any instructions to get the code running.
+ - An archived git repository showing commit history.
 
 All the deliverables should be emailed to guy.weston@creode.co.uk once you have finished.
