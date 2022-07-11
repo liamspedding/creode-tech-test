@@ -1,37 +1,35 @@
-# Creode Tech Test - Social Media API's
+# Solution by Liam Spedding
 
-## Introduction
+## Project Install and Setup
 
-You should not spend longer than a few hours developing code and don’t worry if you don’t manage to complete it, just send over what you have. We’d like to see your solution with well thought out, clean code focusing on readability and reusability.
+To get this project up and running, run `composer install`
 
-## Brief
+_This will install all the project dependencies such as **Dotenv**_
 
-The aim is to produce a webpage which displays a list of friends/followers. These should be retrieved from the mock API classes provided. The product must be as adaptable as possible for future requirements, for example the implementation of additional API classes. The code should be formatted and organised as simply as possible and repeated code should be avoided.
+Then run `composer update` 
 
-### CBook API Mock Library
-The CBook API uses an approach which requires:
+_This will generate the autoload files_
 
- - A client_id (**`8XWr1Hp5xbhSM6u0`**)
- - A client_secret (**`07xdHM9OA8ULaBeC`**)
+Then create a `.env` file and add the API keys and secrets for **both** of the APIs, using the `.env.example` as a template.
 
-### Critter API Mock Library
-The Critter API requires just an API key for authentication:
+## My Thought Process
 
- - An API Key (**`j4nHNuaPo2nq6AdW`**)
+Once I had spent a few minutes rereading the README file, I had a vague plan in my head on how to proceed. However, this plan changed / evolved as I started to build the project.
 
-### Outputting the Response
-The final output of this implementation will be a page showing the following data:
+First I created the index.php file in the root as the single point of entry.
 
- - Follower/Friend Name
- - Follower/Friend Photo
- - Follower/Friend Description
- - Follower/Friend Count
- - Follower/Friend Email Address
+Then I added composer autoloading to make adding any additional api classes easier in the future.
 
-## Deliverables
+I then started developing the loops. I did this one step at a time, var_dump-ing the responses as I went along until I had built out the loop.
 
- - A brief write-up of any decisions you made (and why!) and details of any bits you didn't manage to add but you'd like to.
- - Any instructions to get the code running.
- - An archived git repository showing commit history.
+I knew in my head that I wanted the Friends/Followers to be displayed in a grid. So I added some basic styling using TailwindCSS. I chose Tailwind as it is very easy to build a good-looking UI in no time at all.
 
-All the deliverables should be emailed to guy.weston@creode.co.uk once you have finished.
+Then I added Dotenv to the project to prevent having hard coded API keys and secrets in the source code.
+
+Once I had the basic functionality in place I then started to refactor my code. This involved dividing the index.php file into multiple files, making the index.php file smaller and easier to read.
+
+## Additions
+
+ - If given more time I would add a .htaccess file to the root directory to restrict access to the more sensitive parts pf the project, improving security.
+ - I would also like to make the foreach loops more reusable. Possibly by creating a function and passing all the relevant data through. 
+ - In and ideal world I would also have installed TailwindCSS using NPM. As I could have added some customisation to the *tailwind.config.js* file, removing the need for any extra CSS.
