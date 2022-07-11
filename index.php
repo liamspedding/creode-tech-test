@@ -1,6 +1,12 @@
 <?php
     // Autoload Classes using Composer
-    include_once 'vendor/autoload.php';
+    require 'vendor/autoload.php';
+
+    // Import Dotenv
+    use Dotenv\Dotenv;
+
+    $dotenv = Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
 
     include_once('views/layout/header.php');
 ?>
@@ -8,7 +14,7 @@
 <?php
 
     // Instantiate CBook Class
-    $cbook = new CBookAPI('8XWr1Hp5xbhSM6u0', '07xdHM9OA8ULaBeC');
+    $cbook = new CBookAPI($_ENV['CBOOK_API_CLIENT_KEY'], $_ENV['CBOOK_API_CLIENT_SECRET']);
 
     // Loop through Friends data from API
     echo '<h2 class="text-3xl font-bold mb-5">Friends</h2>';
@@ -21,7 +27,7 @@
     echo '</div>';
 
     // Instantiate Critter Class
-    $critter = new CritterAPI('j4nHNuaPo2nq6AdW');
+    $critter = new CritterAPI($_ENV['CRITTER_API_KEY']);
 
     echo '<h2 class="text-3xl font-bold mb-5">Followers</h2>';
     echo '<div class="grid lg:grid-cols-3 gap-5 md:grid-cols-1">';
