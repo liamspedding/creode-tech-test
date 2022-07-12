@@ -6,11 +6,7 @@ To get this project up and running,
 
 run `composer install`
 
-_This will install all the project dependencies such as **Dotenv**_
-
-Then run `composer update` 
-
-_This will generate the autoload files_
+_This will install all the project dependencies such as **Dotenv**, and generate the autoload files_
 
 Then create a `.env` file in the root directory, and add the API keys and secrets for **both** of the APIs, using the `.env.example` file as a template.
 
